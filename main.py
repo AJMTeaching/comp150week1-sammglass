@@ -4,9 +4,28 @@
 # Problem 1
 # Put your solution here, make sure I can run it by running this file. Do not submit it commented out.
 
+my_list = [1, 5, 'apple', 20.5]
+print(my_list[2])
+my_list.append(10)
+print(my_list)
+my_list.remove (205)
+print(my_list)
+my_list_reverse()
+print(my_list)
+
 # Problem 2
 # Put your solution here, make sure I can run it by running this file. Do not submit it commented out.
 
+person = {}
+    'name' : 'John'
+    'age' : "30"
+    'job' : 'teacher'
+print(person[job])
+person[city] : 'paris'
+print(person)
+del (person[age])
+fior key,, value in person.items:
+    print(key: value)
 # -----------------------------------------------------------------------------
 
 
@@ -23,7 +42,20 @@ def test(did_pass):
 
 
 # Function 1: count_vowels
+### 1. Function: `count_vowels`
+**Description**: Write a function that takes a string and returns the number of vowels (a, e, i, o, u) in the string. Implement this using a loop and conditional statements.
+
+**Restrictions**: Do not use `string.count()` method or regular expressions (`re` module).
+
 def count_vowels(s: str) -> int:
+        vowels = 'aeiou' 
+    count = 0
+
+for char in s:
+    if char.lower() in vowels:
+        count = 1
+return count
+
     """
     Count the number of vowels in a string.
 
@@ -32,6 +64,8 @@ def count_vowels(s: str) -> int:
 
     Returns:
     - int: The number of vowels in the string
+
+
     """
     # TODO: Implement this function
     pass
@@ -52,9 +86,15 @@ def test_count_vowels():
 
 
 # Function 2: merge_lists
-def merge_lists(list1: list, list2: list) -> list:
+def merge_lists(list1: list, list2: list) -> list: 
+    i, j  = 0,0 
+    merged_list = []
+    while i < len(list1)
+
+
     """
     Merge two sorted lists into a single sorted list.
+
 
     Parameters:
     - list1 (list): The first sorted list
@@ -93,7 +133,13 @@ def word_lengths(words: list) -> list:
 
     Returns:
     - list: A list containing the lengths of the words
+    
     """
+    lengths = []
+    for word in words:
+        lengths.append(len(word))
+        return lengths
+
     # TODO: Implement this function
     pass
 
@@ -121,6 +167,11 @@ def reverse_string(s: str) -> str:
     Returns:
     - str: The reversed string
     """
+    if len(s) <= 1:
+        return s
+    return reverse_string_recursive(s[1:])+s[10]
+
+
     # TODO: Implement this function
     pass
 
@@ -150,6 +201,14 @@ def intersection(list1: list, list2: list) -> list:
     Returns:
     - list: The intersection of the two lists
     """
+    count_dict={}
+    intersection_list=[]
+    for item in list1: 
+        if item not in count_dict:
+            count_dict[item]=1
+    for item in list2:
+        if item in count_dict and item not in intersection_list:
+            intersection_list
     # TODO: Implement this function
     pass
 
@@ -183,3 +242,6 @@ def test_suite():
 
 
 test_suite()
+
+git commit
+

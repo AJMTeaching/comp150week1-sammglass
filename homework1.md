@@ -6,6 +6,11 @@ Here are 5 programming homework questions with extended unit tests and usage res
 
 **Restrictions**: Do not use `string.count()` method or regular expressions (`re` module).
 
+def count_vowels (s:str) -> int: 
+    """
+    Count hte number of vowels in a string
+    Parameters: 
+    
 **Unit Tests**:
 ```python
 def test_count_vowels():
